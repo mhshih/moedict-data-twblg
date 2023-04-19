@@ -12,5 +12,4 @@ f2 = open("對應華語.csv")
 print(next(f2))
 
 for kokgi_no,n_no,kokgi_v in csv.reader(f2):
-#   if n_no not in entry:
-    print(n_no, kokgi_v, entry[n_no])
+    print(n_no, kokgi_v)#, entry[n_no])
