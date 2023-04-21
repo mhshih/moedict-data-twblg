@@ -25,6 +25,6 @@ for j in json.load(open("dict-twblg.json")):
     id = heteronym['id']
     if id in id_kokgi:
         if 'type' in definition:
-            print(id, j['title'], id_kokgi[id][0], definition['type'], definition['def'])#, definition['example'])
+            print(id, j['title'], id_kokgi[id][0], definition['type'], definition['def'], sep=',')
         else:
-            print(id, j['title'], id_kokgi[id][0],             '無',   definition['def'])#, definition['example'])
+            print(id, j['title'], id_kokgi[id][0],             '無',   definition['def'], sep=',')
